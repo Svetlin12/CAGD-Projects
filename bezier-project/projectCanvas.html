@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bezier Curve project</title>
+    <style type="text/css">
+        #board {
+            border: 3px solid black;
+            background-color: dimgray;
+        }
+        button {
+            -webkit-border-radius: 28px;
+            -moz-border-radius: 28px;
+            border-radius: 28px;
+            width: 300px;
+            height: 50px;
+            background-color: lightgreen;
+            padding: 4px 10px 4px 10px;
+            font-size: large;
+            font-style: oblique;
+            font-family: "Arial",serif;
+            box-shadow: 5px 5px 5px dimgray;
+            outline: none;
+        }
+        #addPts {
+            position: absolute;
+            top: 10px;
+            left: 900px;
+        }
+        #addPts:hover {
+            background: #3cb0fd;
+        }
+        #drawCurve {
+            position: absolute;
+            top: 80px;
+            left:900px;
+        }
+        #drawCurve:hover {
+            background: #3cb0fd;
+        }
+        #clearCanvas {
+            position: absolute;
+            top: 150px;
+            left: 900px;
+        }
+        #clearCanvas:hover {
+            background: #3cb0fd;
+        }
+    </style>
+    <script type="text/javascript" src="project-script.js"></script>
+</head>
+<body onload="start()">
+    <canvas id="board" width="800" height="500"></canvas>
+    <button id="addPts" type="button" onclick="changeAddingState()">Enable adding points option</button>
+    <button id="drawCurve" type="button" onclick="drawBezierCurve()">Draw Bezier curve</button>
+    <button id="clearCanvas" type="button" onclick="clearCanvas()">Clear canvas</button>
+</body>
+</html>
