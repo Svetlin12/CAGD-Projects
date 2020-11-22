@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bezier Curve project</title>
+    <link rel="stylesheet" href="bezier.css">
+    <script type="text/javascript" src="bezier.js"></script>
+</head>
+<body onload="start()">
+<canvas id="board" width="800" height="500"></canvas>
+<button id="addPts" class="buttonStyle" type="button" onclick="changeAddingState()">Enable adding points option</button>
+<button id="drawCurve" class="buttonStyle" type="button" onclick="drawBezierCurve()">Draw Bezier curve</button>
+<button id="clearCanvas" class="buttonStyle" type="button" onclick="clearCanvasForButton()">Clear canvas</button>
+<button id="removeCtrlPoly" class="buttonStyle" type="button" onclick="changeCtrPolyState()">Remove control polygon</button>
+</body>
+</html>
