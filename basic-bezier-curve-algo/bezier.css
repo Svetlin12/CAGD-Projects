@@ -1,0 +1,54 @@
+#board {
+    border: 3px solid black;
+    background-color: dimgray;
+    box-shadow: 5px 5px darkgray;
+}
+#addPts {
+    position: absolute;
+    top: 100px;
+    left: 900px;
+}
+#drawCurve {
+    position: absolute;
+    top: 170px;
+    left:900px;
+}
+#clearCanvas {
+    position: absolute;
+    top: 240px;
+    left: 900px;
+}
+#removeCtrlPoly {
+    position: absolute;
+    top: 310px;
+    left: 900px;
+}
+.buttonStyle {
+    background: #e9e6e6;
+    position: absolute;
+    top: 230px;
+    left: 900px;
+    border: 4px solid #CD5C5C;
+    box-shadow: 5px 4px dimgray;
+    width: 300px;
+    height: 50px;
+    color: indianred;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: "Arial", serif;
+    font-style: italic;
+    font-size: medium;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform .2s;
+}
+.buttonStyle:hover {
+    color: black;
+    border-color: black;
+    border-radius: 50px;
+    transform: scale(1.1);
+    box-shadow: 0 0;
+}
+.buttonStyle:active {
+    transform: translateY(2px);
+}
